@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.teiath.harrys.vquiz.Activities.GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_heigth_80"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/attempts_txt"
+            style="@style/TextViewGameActivity1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/attempts" />
+
+        <TextView
+            android:id="@+id/time_txt"
+            style="@style/TextViewGameActivity1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/time" />
+
+        <ImageView
+            android:id="@+id/clock_image"
+            android:layout_width="@dimen/width_heigth_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="@color/primary" />
+
+    <TextView
+        android:id="@+id/questions_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_heigth_50"
+        android:layout_marginTop="@dimen/margin_10"
+        android:gravity="center_horizontal"
+        android:text="@string/questions"
+        android:textSize="@dimen/text_main_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/let1_txt"
+            style="@style/TextViewStyleInGame"
+            android:layout_width="@dimen/width_heigth_50"
+            android:layout_height="@dimen/width_heigth_50"
+            android:layout_weight="1"
+            android:background="@drawable/textview_style_amber"
+            android:text="@string/letter1" />
+
+        <TextView
+            android:id="@+id/let2_txt"
+            style="@style/TextViewStyleInGame"
+            android:layout_width="@dimen/width_heigth_50"
+            android:layout_height="@dimen/width_heigth_50"
+            android:layout_weight="1"
+            android:background="@drawable/textview_style_cyan"
+            android:text="@string/letter2" />
+
+        <TextView
+            android:id="@+id/let3_txt"
+            style="@style/TextViewStyleInGame"
+            android:layout_width="@dimen/width_heigth_50"
+            android:layout_height="@dimen/width_heigth_50"
+            android:layout_weight="1"
+            android:background="@drawable/textview_style_purple"
+            android:text="@string/letter3" />
+
+        <TextView
+            android:id="@+id/let4_txt"
+            style="@style/TextViewStyleInGame"
+            android:layout_width="@dimen/width_heigth_50"
+            android:layout_height="@dimen/width_heigth_50"
+            android:layout_weight="1"
+            android:background="@drawable/textview_style_red"
+            android:text="@string/letter4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/let5_txt"
+            style="@style/TextViewStyleInGame"
+            android:layout_width="@dimen/width_heigth_0"
+            android:layout_height="@dimen/width_heigth_50"
+            android:layout_weight="1"
+            android:background="@drawable/textview_style_teal"
+            android:text="@string/letter5" />
+
+        <TextView
+            android:id="@+id/let6_txt"
+            style="@style/TextViewStyleInGame"
+            android:layout_width="@dimen/width_heigth_0"
+            android:layout_height="@dimen/width_heigth_50"
+            android:layout_weight="1"
+            android:background="@drawable/textview_style_yellow"
+            android:text="@string/letter6" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dragged_answers_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_heigth_100"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/transparent_border_style"
+        android:gravity="center"
+        android:hint="@string/drop_here"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_main_size_25"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/reset_btn"
+            style="@style/ButtonStyleInGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            style="@style/ButtonStyleInGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/skip_btn"
+            style="@style/ButtonStyleInGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/right_arrow"
+            android:text="@string/skip" />
+    </LinearLayout>
+</LinearLayout>

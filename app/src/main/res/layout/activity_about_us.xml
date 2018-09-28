@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="50dp"
+    android:background="@color/white_light"
+    android:orientation="vertical"
+    tools:context="com.teiath.harrys.vquiz.Activities.SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:text="@string/about_us_name"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_main_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_15"
+        android:text="@string/about_us"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_main_size" />
+</LinearLayout>

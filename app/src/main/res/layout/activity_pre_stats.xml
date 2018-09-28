@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:orientation="vertical"
+    tools:context="com.teiath.harrys.vquiz.Activities.PreStatsActivity">
+
+    <TextView
+        android:id="@+id/mode_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_heigth_50"
+        android:layout_margin="@dimen/margin_10"
+        android:gravity="center"
+        android:text="Mode"
+        android:textSize="@dimen/text_main_size"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/primary_dark" />
+
+    <TextView
+        android:id="@+id/score_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_heigth_50"
+        android:layout_margin="@dimen/margin_10"
+        android:gravity="center"
+        android:text="@string/score"
+        android:textSize="@dimen/text_main_size"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/primary_dark" />
+
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_heigth_50"
+        android:layout_margin="@dimen/margin_10"
+        android:hint="@string/username"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/sex_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/male_radio_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/female_radio_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_80"
+        android:layout_marginRight="@dimen/margin_80"
+        android:background="@drawable/in_game_button_style"
+        android:text="@string/submit" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/width_heigth_100"
+        android:layout_height="@dimen/width_heigth_100"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+</LinearLayout>

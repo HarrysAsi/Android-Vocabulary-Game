@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:orientation="vertical"
+    tools:context="com.teiath.harrys.vquiz.Activities.CategoriesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/level"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_35"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/beginnerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/in_game_button_style"
+        android:text="@string/beginner"
+        android:textSize="@dimen/text_main_size" />
+
+    <Button
+        android:id="@+id/interBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/in_game_button_style"
+        android:text="@string/intermediate"
+        android:textSize="@dimen/text_main_size" />
+
+    <Button
+        android:id="@+id/expertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/in_game_button_style"
+        android:text="@string/expert"
+        android:textSize="@dimen/text_main_size" />
+
+</LinearLayout>
