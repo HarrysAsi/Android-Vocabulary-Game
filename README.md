@@ -6,7 +6,6 @@ A mobile application created in android - java which helps students with vocabul
 
 ```
 build project
-make apk
 run the project
 ```
 
